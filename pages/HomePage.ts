@@ -6,7 +6,7 @@ export class HomePage extends BasePage {
   private signInLink = this.page.locator("a.login");
 
   async open() {
-    await this.page.goto("/");
+    await this.page.goto("http://www.automationpractice.pl");
   }
 
   async goToLogin() {
