@@ -1,0 +1,120 @@
+# Quipu – Task 2: E2E Test Automation
+
+## Project Overview
+This project contains End-to-End (E2E) automated tests written using Playwright and TypeScript.
+The tests are implemented using the Page Object Model (POM) pattern and cover the main user flows of an e-commerce demo website.
+
+Tested website:
+http://www.automationpractice.pl
+
+---
+
+## Scenarios Covered
+
+1. Login
+   - Login with valid/invalid credentials
+   - Verify error message is displayed
+
+2. Search
+   - Search for a product using the search bar
+   - Verify search results page is shown
+
+3. Add to Cart
+   - Search for a product
+   - Open the first product that can be added to cart
+   - Add product to cart
+   - Proceed to checkout
+   - Verify product exists in the cart
+
+---
+
+## Project Structure
+
+QUIPU TYPE SCRIPT/
+│
+├──data/                     # Test data files
+│   ├── search.ts                # Search query test data
+│   └── users.ts                 # User login credentials
+│
+├──pages/                    # Page Object Model (POM) classes
+│   ├── BasePage.ts
+│   ├── CartPage.ts
+│   ├── HomePage.ts
+│   ├── LoginPage.ts
+│   ├── ProductPage.ts
+│   └── SearchResultsPage.ts
+│
+├──tests/                    # Test scripts (spec files)
+│   ├── add-to-cart.spec.ts
+│   ├── example.spec.ts
+│   ├── login.spec.ts
+│   └── search.spec.ts
+│
+├─ test-results/             # Stores Playwright HTML reports & screenshots
+│   └── .last-run.json
+│
+├─ playwright-report/        # Auto-generated HTML test reports
+│
+├──  playwright.config.ts     # Playwright global configuration file
+├──  package.json              # NPM dependencies and scripts
+├──  package-lock.json
+├──  .gitignore                # Ignored files for Git
+└──  README.md                 # You are here 
+
+
+---
+
+## Technologies Used
+- Playwright
+- TypeScript
+- Node.js
+- Page Object Model (POM)
+
+---
+
+## Prerequisites
+- Node.js (version 18 or higher)
+- npm
+
+Check versions:
+node -v
+npm -v
+
+---
+
+## Installation
+
+1. Open terminal in the project root
+2. Install dependencies:
+npm install
+
+3. Install Playwright browsers:
+npx playwright install
+
+---
+
+## How to Run Tests
+
+Run all tests:
+npx playwright test
+
+Run a single test:
+npx playwright test tests/add-to-cart.spec.ts
+
+Run tests in debug mode:
+npx playwright test --debug
+
+---
+
+## Test Reports
+
+After running the tests, an HTML report is generated.
+
+Open the report:
+npx playwright show-report
+
+
+---
+
+## Author
+Ivan Stojanovska
