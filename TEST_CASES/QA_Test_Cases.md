@@ -8,14 +8,16 @@ We will validate that the search functionality returns relevant results, handles
 ## Search Feature — Manual Test Cases
 
 
-TC001:
-Verify search field visibility on homepage. (Prerequisites: User is on Homepage)
-1. Once on Homepage, observe the top navigation area   -   Search input field is vissible and active.
+TC001: Verify search field visibility on homepage.
+(Prerequisites: User is on Homepage)
+Action:Once on Homepage, observe the top navigation area
+Expected Results: Search input field is vissible and active.
 
 
-TC002:
-Verify valid product search returns correct results. (Prerequisites: User is on Homepage)
-1. Enter 'dress' in the Search box and click the search icon   -   Products with “dress” in name or description are displayed.
+TC002: Verify valid product search returns correct results.
+ (Prerequisites: User is on Homepage)
+Action: Enter 'dress' in the Search box and click the search icon  
+Expected Results: Products with “dress” in name or description are displayed.
 
 
 TC003:
